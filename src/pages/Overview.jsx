@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Overview = () => {
     const [isDarkMode,setIsDarkMode] = useState(false);
@@ -23,19 +24,14 @@ const Overview = () => {
                 </div>
                 <div className='flex gap-5'>
                   <div>
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                   </div>
                     <div>
-                      <a href="/documentation">
+                      <Link to="/documentation">
                         Documentation
-                        </a>
+                        </Link>
                     </div>
-                    <div>
-                        Contact Support
-                    </div>
-                    <div>
-                        About Us
-                    </div>
+                   
                 </div>
                 
             </div>
