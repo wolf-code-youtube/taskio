@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import doc from '../img/doc.jpeg';
+import { Link } from 'react-router-dom';
 const Documentation = () => {
     const [isDarkMode,setIsDarkMode] = useState(false);
     const handleDark=()=>{
@@ -23,18 +24,16 @@ const Documentation = () => {
                 </div>
                 <div className='flex gap-5'>
                   <div>
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                   </div>
                     <div>
-                      <a href="/documentation">
+                      <Link to="/documentation">
                         Documentation
-                        </a>
+                        </Link>
                     </div>
                     <div>
-                        Contact Support
-                    </div>
-                    <div>
-                        About Us
+                        <Link to="/privacypolicy">
+                        Privacy Policy</Link>
                     </div>
                 </div>
                 
@@ -51,9 +50,6 @@ const Documentation = () => {
                     <li className='p-3'><a href="/overview">- Overview</a></li>
                     <li className='p-3'><a href="/calendar">- Calendar</a></li>
                     <li className='p-3'><a href="/teams">- Teams</a></li>
-                    <li className='p-3'>- Users</li>
-                    <li className='p-3'>- Upcoming Features</li>
-                    <li className='p-3'>- Get Support</li>
                     
                 </ul>
             </div>
