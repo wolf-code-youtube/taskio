@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Documentation from "./pages/Documentation";
 import Home from "./pages/Home";
 import Overview from "./pages/Overview";
-import Teams from "./pages/teams";
+import Teams from "./pages/Teams";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Calendar from "./pages/Calendar";
 import Faqs from './pages/faqs';
