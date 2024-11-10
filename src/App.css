@@ -1,0 +1,20 @@
+.fixed-corner{
+  position: fixed;
+  top:0;
+  left:0;
+  padding:15px;
+}
+
+.floating {
+  position: relative; /* Positioning context */
+  animation: float 4s ease-in-out infinite; /* Floating animation */
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px); /* Float up */
+  }
+}
