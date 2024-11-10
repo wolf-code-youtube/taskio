@@ -5,6 +5,7 @@ import ss from '../img/screenshot.png';
 import teams from '../img/team.png';
 import support from '../img/support.jpeg';
 import calendar from '../img/calendar.png';
+import { Link } from "react-router-dom";
 function Home() {
   const [isDarkMode,setIsDarkMode] = useState(false);
   const handleDark=()=>{
@@ -31,21 +32,16 @@ function Home() {
              
               </div>
               <div>
-                  <a href="/privacypolicy">
+                  <Link to="/privacypolicy">
                     Privacy Policy
-                    </a>
+                    </Link>
                 </div>
                 <div>
-                  <a href="/documentation">
+                  <Link to="/documentation">
                     Documentation
-                    </a>
+                    </Link>
                 </div>
-                <div>
-                    Contact Support
-                </div>
-                <div>
-                    About Us
-                </div>
+               
             </div>
         </div>
 
